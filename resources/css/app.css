@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --color-primary: rgb(13, 26, 99);
+    --color-secondary: rgb(26, 44, 163);
+    --color-accent1: rgb(40, 69, 214);
+    --color-accent2: rgb(246, 128, 72);
+
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+.input {
+    @apply w-full p-2 border rounded focus:ring-2 focus:ring-primary;
+}
